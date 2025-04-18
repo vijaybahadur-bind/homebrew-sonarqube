@@ -5,7 +5,7 @@ class Sonarqube < Formula
   sha256 "8d3b2923d9d947527bb92eaa9d4a9735c0b45066aa0e41c661f30fc3647fa340"
   license "LGPL-3.0"
 
-  depends_on :java => "11+"
+  depends_on "openjdk@11"
 
   def install
     libexec.install Dir["*"]
@@ -22,6 +22,9 @@ class Sonarqube < Formula
 
       Default port: 9000
       Access via: http://localhost:9000
+
+      You'll need to export JAVA_HOME before starting:
+        export JAVA_HOME="$(brew --prefix openjdk@11)/libexec/openjdk.jdk/Contents/Home"
     EOS
   end
 end
