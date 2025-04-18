@@ -2,7 +2,7 @@ class Sonarqube < Formula
   desc "SonarQube is an open platform to manage code quality"
   homepage "https://www.sonarqube.org/"
   url "https://binaries.sonarsource.com/Distribution/sonarqube/sonarqube-10.4.1.88267.zip"
-  sha256 "8d3b2923d9d947527bb92eaa9d4a9735c0b45066aa0e41c661f30fc3647fa340"
+  sha256 "8163c2a507405b02491c1a3d97c564fb6dc7702b2eb7a0f3b6e7728cd6288207"
   license "LGPL-3.0"
 
   depends_on "openjdk@11"
