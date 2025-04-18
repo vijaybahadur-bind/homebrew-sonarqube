@@ -23,7 +23,7 @@ class Sonarqube < Formula
       Default port: 9000
       Access via: http://localhost:9000
 
-      You'll need to export JAVA_HOME before starting:
+      Before running, set JAVA_HOME:
         export JAVA_HOME="$(brew --prefix openjdk@11)/libexec/openjdk.jdk/Contents/Home"
     EOS
   end
